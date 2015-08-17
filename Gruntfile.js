@@ -61,6 +61,9 @@ module.exports = function(grunt){
           changeOrigin: true
         }]
       }
+    },
+    concurrent: {
+      dev: ['watch:styles', 'watch:scripts']
     }
   });
 
@@ -71,7 +74,7 @@ module.exports = function(grunt){
       'jshint:all',
       'configureProxies:dev',
       'connect:dev',
-      'watch'
+      'concurrent:dev'
     ]);
   });
 };
