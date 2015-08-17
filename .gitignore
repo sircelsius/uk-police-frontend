@@ -1,0 +1,3 @@
+# ignore bower and compiled assets
+src/assets/bower_components
+src/assets/css
